@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to our test
+
+  // Wrapper
+  #wrapper
+    // DATA LIST
+    h2 Data List
+    #dataList
+      table
+        thead
+          th UserID
+          th Type
+          th SensorData
+          th Delete?
+        tbody
+    // /DATA LIST
+
+    // ADD DATA
+    h2 Add Data
+      #addData
+        fieldset
+          input#inputUserId(type='text', placeholder='user id')
+          input#inputType(type='text', placeholder='sensor type')
+          input#inputData(type='text', placeholder='data point')
+          button#btnAddData Add Data
+    // /ADD DATA
+  // /WRAPPER
